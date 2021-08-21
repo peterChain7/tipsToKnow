@@ -44,7 +44,7 @@ Encode
 
     print(data)
     
-    ##### To use it:
+  ##### To use it:
 
     $ python3 decode_nested_b64.py b64.txt 
     b'flag 44: ygm2my89uqzirzj0nojw'

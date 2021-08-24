@@ -18,10 +18,10 @@
    #### usage
     $ ./nmap-scan.sh <ip_to_scan>
 ## 3. Crypto
-Encode
+#### base64 encode
     $ echo -n "administrator:password" | base64
     YWRtaW5pc3RyYXRvcjpwYXNzd29yZA==
-#### base64 Decode
+#### base64 decode
     $ echo "YWRtaW5pc3RyYXRvcjpwYXNzd29yZA==" | base64 -d
     administrator:password 
 #### For nested base64 files

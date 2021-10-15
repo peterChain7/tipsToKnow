@@ -15,6 +15,8 @@
     $ cat nmap-scan.sh 
     ports=$(nmap -p- --min-rate=1000  -T4 $1 | grep ^[0-9] | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//)
     nmap -sC -sV -p$ports $1
+    sudo masscan 34.125.4.41  -p0-65535,U:0-65535
+
    #### usage
     $ ./nmap-scan.sh <ip_to_scan>
 ## 3. Crypto

@@ -45,10 +45,14 @@
     print(data)
     
   ##### To use it:
+ 
 
     $ python3 decode_nested_b64.py b64.txt 
     b'flag 44: ygm2my89uqzirzj0nojw'
 #### base32
     $ echo "NBSWY3DPEB3W64TMMQQQU===" | base32 -d
     hello world!
-    
+  
+  ## Port forwading
+  ### using socat 
+          socat tcp-listen:9090,fork tcp:127.0.0.1:631  ....631 is internal port  ... 9090 is the port i will in mymachine

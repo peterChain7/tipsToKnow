@@ -1,12 +1,5 @@
 ## 1. Stabilize your reverse shell
-    SHELL=/bin/bash script -q /dev/null 
-    Ctrl-Z <
-    stty raw -echo 
-    fg 
-    reset  
-    xterm
-   
- #### OR
+  
     python3 -c "import pty;pty.spawn('/bin/bash')"
     export TERM=xterm; export SHELL=/bin/bash
     CTRL+Z
@@ -17,11 +10,11 @@
          export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/tmp
          export TERM=xterm-256color
          alias ll='ls -lsaht --color=auto'
-         run ctrl+Z in target 
+          ctrl+Z  (in target) 
          stty raw -echo;fg;reset
-         press enter *3
-               in my machine run 
-               stty -a ( output = speed 38400 baud; rows 40; columns 174; line = 0;)
+               press enter *3
+                   in my machine run 
+                    stty -a ( output = speed 38400 baud; rows 40; columns 174; line = 0;)
          stty columns 174 rows 40
       
 ## 2. Nmap scan script

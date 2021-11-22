@@ -64,7 +64,15 @@
   ## Port forwading
   ### using socat 
           socat tcp-listen:9090,fork tcp:127.0.0.1:631  ....631 is internal port  ... 9090 is the port i will in mymachine
-             
+## BASH automation
+*  cracking with all password list from seclists/Passwords
+  
+       for i in $(ls /usr/share/seclists/Passwords/ | grep .txt); do john hash /usr/share/seclists/Passwords/$i; done
+
+ * cracking images
+ 
+       for i in $(ls /usr/share/seclists/Passwords/ | grep *.txt); do stegseek event_banner.jpg /usr/share/wordlists/SecLists/Passwords/$i; done
+
    ### davzat
    
            POST /api/pet HTTP/1.1

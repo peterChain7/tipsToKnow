@@ -73,7 +73,7 @@
  
        for i in $(ls /usr/share/seclists/Passwords/ | grep *.txt); do stegseek event_banner.jpg /usr/share/wordlists/SecLists/Passwords/$i; done
 
-   ### davzat
+   ### davzat hack the box machine getting shell
    
            POST /api/pet HTTP/1.1
             Host: pets.devzat.htb

